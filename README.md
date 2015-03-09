@@ -1,3 +1,3 @@
 ## Tabla de contenidos
 
-- [Introducción](/installation)
+- [Introducción](installation/README.md)
