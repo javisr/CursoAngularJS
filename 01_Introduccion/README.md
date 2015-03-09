@@ -42,7 +42,7 @@ Las características del core de AngularJS son las siguientes:
 ##Concepts
 El siguiente diagrama representa algunas partes importantes de AngularJS las cuales vamos a ver mas en detalle en los siguientes capítulos.
 
-![image](http://)
+![image](http://https://raw.githubusercontent.com/javisr/CursoAngularJS/master/01_Introduccion/angularjs_concepts.jpg)
 
 
 ##Advantages of AngularJS
