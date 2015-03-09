@@ -1,5 +1,3 @@
-## Table of Contents
+## Tabla de contenidos
 
-- [Installation](#installation)
-
-## Installation
+- [Introducción](#/installation)
