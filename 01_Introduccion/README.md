@@ -58,9 +58,7 @@ Es la parte que controla interacciones entre el modelo y la vista.
 ##Conceptos
 El siguiente diagrama representa algunas partes importantes de AngularJS las cuales vamos a ver mas en detalle en los siguientes capítulos.
 
-![Screenshot](http://raw.githubusercontent.com/javisr/CursoAngularJS/master/01_Introduccion/angularjs_concepts.jpg)
-
-<img src="http://raw.githubusercontent.com/javisr/CursoAngularJS/master/01_Introduccion/angularjs_concepts.jpg" width="530">
+![Screenshot](http://javisr.net/angularjs_concepts.jpg)
 
 ##Advantages of AngularJS
 Las ventajas de AngularJS a groso modo son:
