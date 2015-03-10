@@ -64,5 +64,5 @@ Podemos por ejemplo crear un elemento en una lista por cada uno de los departame
 </html>
 ```
 
-Puedes ver el programa funcionando en el siguiente enlace:
+Puedes ver la aplicación funcionando en el siguiente enlace:
 
