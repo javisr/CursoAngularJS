@@ -39,10 +39,10 @@ Las características del core de AngularJS son las siguientes:
 * Inyección de dependencias: AngularJS tiene un sistema de inyección de dependencias integrado que ayuda a los desarrolladores para crear, entender y probar las aplicaciones con facilidad.
 
 
-##Concepts
+##Conceptos
 El siguiente diagrama representa algunas partes importantes de AngularJS las cuales vamos a ver mas en detalle en los siguientes capítulos.
 
-![image](http://http://raw.githubusercontent.com/javisr/CursoAngularJS/master/01_Introduccion/angularjs_concepts.jpg)
+![image](http://raw.githubusercontent.com/javisr/CursoAngularJS/master/01_Introduccion/angularjs_concepts.jpg)
 
 
 ##Advantages of AngularJS
