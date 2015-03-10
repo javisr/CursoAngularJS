@@ -8,7 +8,7 @@ Lo normal es que los controladores estén definidos en los módulos. Sin embargo
 Para asociar un elemento HTML a un controlador de angular tenemos que usar la directiva ng-controller.
 
 ```HTML
-<div ng-app="" ng-controller="cocheController">
+<div ng-app="" ng-controller="recetaController">
 ...
 </div>
 ```
@@ -16,41 +16,39 @@ Para asociar un elemento HTML a un controlador de angular tenemos que usar la di
 #### Defición de un controlador
 ```HTML
 <script>
-function cocheController($scope) {
-   $scope.coche = {
-      marca: "Renault",
-      modelo: "Megane GT",
-      matricula: "1234-QWE"
-      tuCocheEs: function() {
-         var cocheObj;
-         studentObject = $scope.coche;
-         return cocheObj.marca + " " + cocheObj.modelo + " con matrícula" + cocheObj.matricula;
+function recetaController($scope) {
+   $scope.receta = {
+      nombre: "ingredientesPrincipales",
+      ingredientesPrincipales: "Pasta, champiñones, bacon y aceite",
+      resumen: function() {
+         var recetaObj;
+         recetaObj = $scope.receta;
+         return " La receta " + recetaObj.nombre + " se hace con:" + recetaObj.ingredientesPrincipales;
       }
    };
 }
 </script>
 ```
 
-La función cocheController se define como un objeto JavaScript que recibe $scope como parámetro.
+La función recetaController se define como un objeto JavaScript que recibe $scope como parámetro.
 
 $scope es el objeto JavaScript de la vista. Angular crea uno para cada controlardor.
 
-Dentro de $scope hemos definido una propiedad coche
+Dentro de $scope hemos definido una propiedad receta
 
-A su vez, coche contiene otras tres propiedades a las que les pasaremos datos desde el HTML y un método que devolverá una cadena con los valores de los tres metodos.
+A su vez, receta contiene otras dos propiedades a las que les pasaremos datos desde el HTML y un método que devolverá una cadena con los valores de los dos.
 
 #### Representando los datos
 
-Ahora podemos usar las propiedades de coche así como de cualquier otra propiedad que hubiese sido definida en el $scope. En este caso:
+Ahora podemos usar las propiedades de receta así como de cualquier otra propiedad que hubiese sido definida en el $scope. En este caso:
 
 ```HTML
-<div ng-app="" ng-controller="cocheController">
+<div ng-app="" ng-controller="recetaController">
 
-¿Qué marca de tu coche?: <input type="text" ng-model="coche.marca"><br>
-¿y el modelo?: <input type="text" ng-model="coche.modelo"><br>
-¿y la matrícula?: <input type="text" ng-model="coche.matricula"><br>
+Nombre de la receta: <input type="text" ng-model="receta.nombre"><br>
+Ingredientes principales: <input type="text" ng-model="receta"><br>
 <br>
-Tu coche es: {{coche.tuCocheEs()}}
+{{receta.resumen()}}
 </div>
 ```
 
@@ -63,26 +61,23 @@ Tu coche es: {{coche.tuCocheEs()}}
 </head>
 <body>
 <h2>Controlador AngularJS</h2>
-<div ng-app="" ng-controller="cocheController">
+<div ng-app="" ng-controller="recetaController">
 
-¿Qué marca de tu coche?: <input type="text" ng-model="coche.marca"><br>
-¿y el modelo?: <input type="text" ng-model="coche.modelo"><br>
-¿y la matrícula?: <input type="text" ng-model="coche.matricula"><br>
+Nombre de la receta: <input type="text" ng-model="receta.nombre"><br>
+Ingredientes principales: <input type="text" ng-model="receta"><br>
 <br>
-Tu coche es: {{coche.tuCocheEs()}}
-
+{{receta.resumen()}}
 </div>
 
 <script>
-function cocheController($scope) {
-   $scope.coche = {
-      marca: "Renault",
-      modelo: "Megane GT",
-      matricula: "1234-QWE"
-      tuCocheEs: function() {
-         var cocheObj;
-         studentObject = $scope.coche;
-         return cocheObj.marca + " " + cocheObj.modelo + " con matrícula" + cocheObj.matricula;
+function recetaController($scope) {
+   $scope.receta = {
+      nombre: "ingredientesPrincipales",
+      ingredientesPrincipales: "Pasta, champiñones, bacon y aceite",
+      resumen: function() {
+         var recetaObj;
+         recetaObj = $scope.receta;
+         return " La receta " + recetaObj.nombre + " se hace con:" + recetaObj.ingredientesPrincipales;
       }
    };
 }

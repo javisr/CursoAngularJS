@@ -4,26 +4,23 @@
 </head>
 <body>
 <h2>Controlador AngularJS</h2>
-<div ng-app="" ng-controller="cocheController">
+<div ng-app="" ng-controller="recetaController">
 
-¿Qué marca de tu coche?: <input type="text" ng-model="coche.marca"><br>
-¿y el modelo?: <input type="text" ng-model="coche.modelo"><br>
-¿y la matrícula?: <input type="text" ng-model="coche.matricula"><br>
+Nombre de la receta: <input type="text" ng-model="receta.nombre"><br>
+Ingredientes principales: <input type="text" ng-model="receta"><br>
 <br>
-Tu coche es: {{coche.tuCocheEs()}}
-
+{{receta.resumen()}}
 </div>
 
 <script>
-function cocheController($scope) {
-   $scope.coche = {
-      marca: "Renault",
-      modelo: "Megane GT",
-      matricula: "1234-QWE"
-      tuCocheEs: function() {
-         var cocheObj;
-         studentObject = $scope.coche;
-         return cocheObj.marca + " " + cocheObj.modelo + " con matrícula" + cocheObj.matricula;
+function recetaController($scope) {
+   $scope.receta = {
+      nombre: "ingredientesPrincipales",
+      ingredientesPrincipales: "Pasta, champiñones, bacon y aceite",
+      resumen: function() {
+         var recetaObj;
+         recetaObj = $scope.receta;
+         return " La receta " + recetaObj.nombre + " se hace con:" + recetaObj.ingredientesPrincipales;
       }
    };
 }
