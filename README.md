@@ -16,3 +16,7 @@ El temario parte de unos conocimientos previos. Es recomendable estar familiariz
 
  1. [Introducción](01_Introduccion/)
  2. [Hola Mundo](02_Hola_Mundo/)
+ 3. [Directivas](03_Directivas/)
+ 4. [Expresiones](04_Expresiones/)
+ 5. [Controladores](05_Controladores)
+ 6. [Filtros](06_Filtros/)
