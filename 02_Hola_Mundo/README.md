@@ -25,23 +25,24 @@ Vamos a crear una aplicación sencilla utilizando **AngularJS**. Para comprender
 
 4. Enlazamos el valor de nuestra variable *nombre* a una etiqueta *span*.
 ```HTML
-<p>Hola <span ng-bind="nombre"></span>!</p>
+<p>¡Hola <span ng-bind="nombre"></span>!</p>
 ```
 
 #### Ejecutando la aplicación ####
 Para ver en funcionamiento nuestra apliación juntamos los cuatro pasos en un archivo HTML:
 ```HTML
 <html>
-<title>AngularJS First Application</title>
+<title>Hola Mundo AngularJS</title>
 <body>
-	<h1>Sample Application</h1>
+	<h1>Hola Mundo</h1>
 	<div ng-app="">
-  	 <p>Enter your Name: <input type="text" ng-model="name"></p>
-  	 <p>Hello <span ng-bind="name"></span>!</p>
+  	 <p>Escribe tu nombre: <input type="text" ng-model="nombre"></p>
+  	 <p>¡Hola <span ng-bind="nombre"></span>!</p>
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 </body>
 </html>
 ```
+Podemos comprobar que el valor recogido en el *input* por la directiva **ng-model** es renderizado en la etiqueta *span* por la directiva **ng-bind**
 
 Puedes ver el programa funcionando en el siguiente enlace:
