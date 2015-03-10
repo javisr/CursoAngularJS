@@ -39,11 +39,26 @@ Las características del core de AngularJS son las siguientes:
 * Inyección de dependencias: AngularJS tiene un sistema de inyección de dependencias integrado que ayuda a los desarrolladores para crear, entender y probar las aplicaciones con facilidad.
 
 
+##Arquitectura MVVC
+Como ya hemos comentado antes, AngularJS no sigue el MVC tradicional. En su lugar implementa una arquitectura Modelo-Vista-Vista-Controlador:
+
+#### El Modelo
+El modelo es el reponsable de mantener los datos de la aplicación
+
+#### La Vista-Vista
+En AngularJS la vista se divide en dos partes:
+
+* La vista HTML que representa la vista traducional y que es lo que el usuario final ve.
+* El $scope es la representación en JavaScript de la vista HTML. Cualquier cambio que sufra un valor en el $scope reflejara automáticamente en el HTML y viceversa.
+
+#### El Controlador
+Es la parte que controla interacciones entre el modelo y la vista.
+
+
 ##Conceptos
 El siguiente diagrama representa algunas partes importantes de AngularJS las cuales vamos a ver mas en detalle en los siguientes capítulos.
 
-![image](http://raw.githubusercontent.com/javisr/CursoAngularJS/master/01_Introduccion/angularjs_concepts.jpg)
-
+![Screenshot](http://javisr.net/angularjs_concepts.jpg)
 
 ##Advantages of AngularJS
 Las ventajas de AngularJS a groso modo son:
