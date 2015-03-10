@@ -26,7 +26,7 @@ Usando Arrays
 <p>Nota en Literatura: {{notas[3]}}</p>
 ```
 
-#### Ejemplo de Código ####
+## Aplicación de Ejemplo ##
 
 ```HTML
 <html>

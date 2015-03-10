@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Controlador AngularJS</title>
+</head>
+<body>
+<h2>Controlador AngularJS</h2>
+<div ng-app="" ng-controller="cocheController">
+
+¿Qué marca de tu coche?: <input type="text" ng-model="coche.marca"><br>
+¿y el modelo?: <input type="text" ng-model="coche.modelo"><br>
+¿y la matrícula?: <input type="text" ng-model="coche.matricula"><br>
+<br>
+Tu coche es: {{coche.tuCocheEs()}}
+
+</div>
+
+<script>
+function cocheController($scope) {
+   $scope.coche = {
+      marca: "Renault",
+      modelo: "Megane GT",
+      matricula: "1234-QWE"
+      tuCocheEs: function() {
+         var cocheObj;
+         studentObject = $scope.coche;
+         return cocheObj.marca + " " + cocheObj.modelo + " con matrícula" + cocheObj.matricula;
+      }
+   };
+}
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+</body>
+</html>
