@@ -1,3 +1,4 @@
+## Hola Mundo AngularJS ##
 Vamos a crear una aplicación sencilla utilizando **AngularJS**. Para comprender la filosofía de trabajo de este framework, utilizaremos tres *directivas*, extensiones del HTML, básicas.
 
 - **ng-app** : Esta directiva indica el inicio de una aplicación AngularJS.
