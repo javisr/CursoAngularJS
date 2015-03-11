@@ -7,7 +7,7 @@ El servicio $http tiene varios métodos que corresponden a las distintas operaci
 #### $http.get() ####
 La función GET usa para traer leer datos del servidor
 
-```HTML
+```JAVASCRIPT
 $http.get('/urlCualquiera').
   success(function(response) {
     // Esta función será llamada de forma asincrona
@@ -22,7 +22,7 @@ $http.get('/urlCualquiera').
 #### $http.post() ####
 La función POST envíar/crear datos al servidor
 
-```HTML
+```JAVASCRIPT
 $http.post('/urlCualquiera', {msg:'hola!'}).
   success(function(response) {
     // Esta función será llamada de forma asincrona
