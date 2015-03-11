@@ -1,3 +1,40 @@
+##Formularios##
+
+AngularJS proporciona un potente conjunto de utilidades para facilitar el trabajo con formularios. Utilizando estas utilidades y directivas ya conocidas, podemos validar formularios de una forma sencilla y potente.
+
+Lo primero es indicar que no vamos a utilizar las validaciones que proporciona HTML, y darle un nombre a nuestro formulario
+```HTML
+<form novalidate name="form" class="css-form">
+```
+
+### Validaciones ###
+Las siguientes variables nos ayudan a saber el estado en el que se encuentra un campo del formulario. Además aplican clases a los controles según su estado para ayudar al estilado.
+- **$pristine** - booleano que indica si el usuario aun no ha interactuado con el campo
+```HTML
+ Nombre: <input type="text" ng-model="user.name" name="name" required />
+<span ng-show="form.name.$pristine">Escribre tu nombre</span>
+```
+ 
+- **$dirty** - booleano que indica si el valor ha sido cambiado.
+```HTML
+ Nombre: <input type="text" ng-model="user.name" name="nombre" required />
+<span ng-hide="form.email.$dirty">Escribe tu nombre</span>
+```
+
+- **$invalid** - booleano que indica si el valor no es correcto.
+```HTML
+<input type="submit" ng-disabled ="form.$invalid" value="Guardar" />
+```
+
+- ** $error ** - hash que proporciona el motivo exacto del error.
+ ```HTML
+ E-mail: <input type="email" ng-model="user.email" name="email" required />
+<span ng-show="form.email.$error.email">Email no válido</span>
+<span ng-show="form.email.$error.required">Email obligatorio</span>
+```
+
+## Aplicación de ejemplo ##
+
 ```HTML
 <html>
 <head>
