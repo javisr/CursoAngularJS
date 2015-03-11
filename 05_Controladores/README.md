@@ -46,7 +46,7 @@ Ahora podemos usar las propiedades de receta así como de cualquier otra propied
 <div ng-app="" ng-controller="recetaController">
 
 Nombre de la receta: <input type="text" ng-model="receta.nombre"><br>
-Ingredientes principales: <input type="text" ng-model="receta"><br>
+Ingredientes principales: <input type="text" ng-model="receta.ingredientesPrincipales"><br>
 <br>
 {{receta.resumen()}}
 </div>
@@ -58,31 +58,34 @@ Ingredientes principales: <input type="text" ng-model="receta"><br>
 <html>
 <head>
 <title>Controlador AngularJS</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 </head>
 <body>
 <h2>Controlador AngularJS</h2>
-<div ng-app="" ng-controller="recetaController">
+<div ng-app="app" ng-controller="recetaController">
 
 Nombre de la receta: <input type="text" ng-model="receta.nombre"><br>
-Ingredientes principales: <input type="text" ng-model="receta"><br>
+Ingredientes principales: <input type="text" ng-model="receta.ingredientesPrincipales"><br>
 <br>
 {{receta.resumen()}}
 </div>
 
 <script>
-function recetaController($scope) {
+
+angular.module('app', [])
+.controller('recetaController', ['$scope', function ($scope){
    $scope.receta = {
-      nombre: "ingredientesPrincipales",
-      ingredientesPrincipales: "Pasta, champiñones, bacon y aceite",
+      nombre: "Pasta con champinones",
+      ingredientesPrincipales: 'pasta,champinones...',
       resumen: function() {
          var recetaObj;
          recetaObj = $scope.receta;
          return " La receta " + recetaObj.nombre + " se hace con:" + recetaObj.ingredientesPrincipales;
       }
-   };
-}
+    };
+}]);
 </script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
 </body>
 </html>
 ```
