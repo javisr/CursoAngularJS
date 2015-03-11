@@ -8,7 +8,7 @@ Vamos a crear una aplicación sencilla utilizando **AngularJS**. Para comprender
 #### Creando la aplicación ####
 1. Añadimos el framework a la página, utilizamos una etiqueta script como con cualquier archivo javascript.
 ```HTML
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
 </script>
 ```
 
@@ -39,10 +39,11 @@ Para ver en funcionamiento nuestra apliación juntamos los cuatro pasos en un ar
   	 <p>Escribe tu nombre: <input type="text" ng-model="nombre"></p>
   	 <p>¡Hola <span ng-bind="nombre"></span>!</p>
 	</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 </body>
 </html>
 ```
 Podemos comprobar que el valor recogido en el *input* por la directiva **ng-model** es renderizado en la etiqueta *span* por la directiva **ng-bind**
 
 Puedes ver el programa funcionando en el siguiente enlace:
+http://jsfiddle.net/Albertobeiz/9ahjpphr/
