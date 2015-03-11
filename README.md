@@ -20,3 +20,8 @@ El temario parte de unos conocimientos previos. Es recomendable estar familiariz
  4. [Expresiones](04_Expresiones/)
  5. [Controladores](05_Controladores)
  6. [Filtros](06_Filtros/)
+ 7. [HTML DOM](07_Filtros/)
+ 8. [Modulos](08_Modulos/)
+ 9. [Formularios](09_Formularios/)
+ 10. [Includes](10_Includes/)
+
