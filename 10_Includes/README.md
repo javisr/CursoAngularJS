@@ -1,7 +1,6 @@
 ## Includes ##
 AngularJS facilita la inclusión de HTML en otras páginas mediante la directiva **ng-include**.
 
-Los fragmentos HTML incluidos pueden acceder a las variables de un controlador declarado en un nivel superior.
 ```HTML
 <div ng-app="" ng-controller="controller">
    <div ng-include="'template1.html'"></div>
