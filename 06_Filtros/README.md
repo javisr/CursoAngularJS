@@ -160,3 +160,6 @@ angular.module('app', [])
 </body>
 </html>
 ```
+
+Puedes ver la aplicación funcionando en el siguiente enlace:
+http://plnkr.co/edit/9YFa4Pyku7FHZUyRgnxw?p=preview
