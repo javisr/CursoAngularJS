@@ -2,29 +2,29 @@
 <html>
 <head>
   <title>Formularios</title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
 </head>
 <body ng-app="formExample">
   <div ng-controller="ExampleController">
   <form novalidate name="form" class="css-form">
-    Nombre: <input type="text" ng-model="user.name" required /><br />
-    E-mail: <input type="email" ng-model="user.email" required /><br />
+    Nombre: <input type="text" ng-model="user.name" name="name" required /><br />
+      <span ng-show="form.name.$error.required">Nombre obligatorio</span><br/>
+      
+    E-mail: <input type="email" ng-model="user.email" name="email" required /><br />
+      
+      <span ng-show="form.email.$error.email">Email no válido</span><br/>
+      
+      <span ng-show="form.email.$error.required">Email obligatorio</span><br/>
+      
     Sexo: <input type="radio" ng-model="user.gender" value="male" />hombre
     <input type="radio" ng-model="user.gender" value="female" />mujer<br />
     <input type="submit" ng-disabled ="form.$invalid" value="Guardar" />
     <input type="submit" ng-click ="reset()" value="Reset" />
+    <div ng-show="form.$submitted"> Formulario enviado</div>
   </form>
   <pre>user: {{ user }}</pre>
 </div>
-
-<style type="text/css">
-  .css-form input.ng-invalid.ng-touched {
-    background-color: #FA787E;
-  }
-
-  .css-form input.ng-valid.ng-touched {
-    background-color: #78FA89;
-  }
-</style>
 
 <script>
   angular.module('formExample', [])
@@ -34,7 +34,9 @@
       };
     }]);
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
 </body>
+
 </html>
 ```
+
+https://jsfiddle.net/Albertobeiz/rm3r4aux/
