@@ -67,54 +67,9 @@ Ordena el array basado en criterios proporcionados.
 
 Nombre de la receta: <input type="text" ng-model="receta.nombre"><br>
 Ingredientes principales: <input type="text" ng-model="receta.ingredientesPrincipales"><br>
-<br> Resumen en mayusculas: {{receta.resumen() | uppercase}}
+<br> Resumen en mayúsculas: {{receta.resumen() | uppercase}}
 
-<br> Resumen en minusculas: {{receta.resumen() | lowercase}}
-
-<br> Precio: {{receta.precio | currency:"€"}}
-
-<br>Ingredientes:
-<ul>
-  <li ng-repeat="ingrediente in receta.ingredientes | orderBy:'-cantidad'">
-    {{ ingrediente.nombre + ', cantidad:' + ingrediente.cantidad }}
-  </li>
-</ul>
-
-<br>Busca ingrediente: <input type="text" ng-model="receta.buscador"><br>
-<ul>
-  <li ng-repeat="ingrediente in receta.ingredientes | filter:receta.buscador">
-    {{ ingrediente.nombre + ', cantidad:' + ingrediente.cantidad }}
-  </li>
-</ul>
-
-Ordena el array basado en criterios proporcionados.
-
-<br>Busca ingrediente: <input type="text" ng-model="receta.buscador"><br>
-<ul>
-  <li ng-repeat="ingrediente in receta.ingredientes | filter:receta.buscador">
-    {{ ingrediente.nombre + ', cantidad:' + ingrediente.cantidad }}
-  </li>
-</ul>
-
-
-## Aplicación de Ejemplo ##
-
-```HTML
-<html>
-<head>
-<title>Filtros AngularJS</title>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-</head>
-
-<body>
-<h2>Filtros AngularJS</h2>
-<div ng-app="app" ng-controller="recetaController">
-
-Nombre de la receta: <input type="text" ng-model="receta.nombre"><br>
-Ingredientes principales: <input type="text" ng-model="receta.ingredientesPrincipales"><br>
-<br> Resumen en mayusculas: {{receta.resumen() | uppercase}}
-
-<br> Resumen en minusculas: {{receta.resumen() | lowercase}}
+<br> Resumen en minúsculas: {{receta.resumen() | lowercase}}
 
 <br> Precio: {{receta.precio | currency:"€"}}
 
