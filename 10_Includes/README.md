@@ -4,8 +4,7 @@ AngularJS facilita la inclusión de HTML en otras páginas mediante la directiva
 Los fragmentos HTML incluidos pueden acceder a las variables de un controlador declarado en un nivel superior.
 ```HTML
 <div ng-app="" ng-controller="controller">
-   <div ng-include="'header.html'"></div>
-   <div ng-include="'body.html'"></div>
+   <div ng-include="'template1.html'"></div>
 </div>
 ````
 
@@ -19,43 +18,29 @@ Los fragmentos HTML incluidos pueden acceder a las variables de un controlador d
 <body>
 <h2>Includes AngularJS</h2>
 <div ng-app="">
-<div ng-app="" ng-controller="controller">
-   <div ng-include="'header.htm'"></div>
-   <div ng-include="'body.htm'"></div>
-</div>
+    <button ng-click="template='/template1.html'">Template 1</button>
+    <button ng-click="template='/template2.html'">Template 2</button>
+    <div ng-include="template"></div>
 </div>
 
-<script>
-function controller($scope) {
-   $scope.receta = {
-      titulo: "Pasta con champiñones",
-      ingredientes:[
-         {nombre:'Pasta',cantidad:100},
-         {nombre:'Champiñones',cantidad:100},
-         {nombre:'Bacon',cantidad:20},
-         {nombre:'Aceite',cantidad:10},
-      ]
-      }
-   };
-}
-</script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 </body>
+
 </html>
 ```
 
-#### header.html ####
+#### template1.html ####
 ```HTML
-<div> {{ receta.titulo }}</div>
+<div>
+    <span>Contenido del template 1</span>
+</div>
 ```
 
-#### body.html ####
+#### template2.html ####
 ```HTML
-<ul>
-	<li ng-repeat="ingrediente in receta.ingredientes">
-   	{{ ingrediente.cantidad }} gramos de {{ ingrediente.nombre }}
-	</li>
-</ul>
+<div>
+    <span>Contenido del template 2</span>
+</div>
 ```
 Puedes ver la aplicación funcionando en el siguiente enlace:
+http://jsfiddle.net/Albertobeiz/ab7nsm9v/
