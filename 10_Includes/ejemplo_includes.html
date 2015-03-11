@@ -1,0 +1,25 @@
+<body>
+<h2>Includes AngularJS</h2>
+<div ng-app="">
+    <button ng-click="template='/template1.html'">Template 1</button>
+    <button ng-click="template='/template2.html'">Template 2</button>
+    <div ng-include="template"></div>
+
+
+<script type="text/ng-template" id="/template1.html">
+  <div>
+    <span>Contenido del template 1</span>
+  </div>
+</script>
+    
+<script type="text/ng-template" id="/template2.html">
+  <div>
+    <span>Contenido del template 2</span> 
+  </div>
+</script>
+    
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</body>
+
