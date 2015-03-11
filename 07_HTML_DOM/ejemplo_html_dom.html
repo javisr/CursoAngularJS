@@ -1,0 +1,19 @@
+<html>
+<body>
+<h2>HTML DOM AngularJS</h2>
+<div ng-app="">
+   <input type="checkbox" ng-model="deshabilitaBoton">Deshabilitar Botón
+   <button ng-disabled="deshabilitaBoton">Click</button>
+   <br/>
+   <input type="checkbox" ng-model="muestraBoton">Mostrar Botón
+   <button ng-show="muestraBoton">Click</button>
+   <br/>
+   <input type="checkbox" ng-model="ocultaBoton">Ocultar Botón
+   <button ng-hide="ocultaBoton">Click</button>
+   <br/>
+   <p>Número de clicks: {{ contador }}</p>
+   <button ng-click="contador = contador + 1">Click</button>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</body>
+</html>
