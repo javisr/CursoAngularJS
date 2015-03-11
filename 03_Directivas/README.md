@@ -59,10 +59,10 @@ Podemos por ejemplo crear un elemento en una lista por cada uno de los departame
       </li>
    </ol>
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 </body>
 </html>
 ```
 
 Puedes ver la aplicación funcionando en el siguiente enlace:
-
+http://jsfiddle.net/Albertobeiz/05yan677/
