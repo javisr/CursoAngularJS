@@ -32,33 +32,24 @@ Ejecuta una acción al hacer click sobre el elemento HTML.
 ## Aplicación de Ejemplo ##
 ```HTML
 <html>
-<head>
-<title>HTML DOM AngularJS</title>
-</head>
 <body>
 <h2>HTML DOM AngularJS</h2>
 <div ng-app="">
-<table border="0">
-<tr>
-   <td><input type="checkbox" ng-model="deshabilitaBoton">Deshabilitar Botón</td>
-   <td><button ng-disabled="deshabilitaBoton">Click</button></td>
-</tr>
-<tr>
-   <td><input type="checkbox" ng-model="muestraBoton">Mostrar Botón</td>
-   <td><button ng-show="muestraBoton">Click</button></td>
-</tr>
-<tr>
-   <td><input type="checkbox" ng-model="ocultaBoton">Ocultar Botón</td>
-   <td><button ng-hide="ocultaBoton">Click</button></td>
-</tr>
-<tr>
-   <td><p>Número de clicks: {{ contador }}</p></td>
-   <td><button ng-click="contador = contador + 1">Click</button></td>
-</tr>
-</table>
+   <input type="checkbox" ng-model="deshabilitaBoton">Deshabilitar Botón
+   <button ng-disabled="deshabilitaBoton">Click</button>
+   <br/>
+   <input type="checkbox" ng-model="muestraBoton">Mostrar Botón
+   <button ng-show="muestraBoton">Click</button>
+   <br/>
+   <input type="checkbox" ng-model="ocultaBoton">Ocultar Botón
+   <button ng-hide="ocultaBoton">Click</button>
+   <br/>
+   <p>Número de clicks: {{ contador }}</p>
+   <button ng-click="contador = contador + 1">Click</button>
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 </body>
 </html>
 ```
 Puedes ver la aplicación funcionando en el siguiente enlace:
+http://jsfiddle.net/Albertobeiz/jkoh2zxh/
