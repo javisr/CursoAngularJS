@@ -8,31 +8,27 @@
 <h2>Vistas AngularJS</h2>
 <div ng-app="app" ng-controller="recetaController">
 
-<button type="button" ng-click="cargarRecetasDisponibles()">Cargar</button>
-
-   <p>Lista de recetas:</p>
-   <ol>
-      <li ng-repeat="receta in recetas">
-         {{ receta.nombre + '. precio: ' + receta.precio + ' euros'}} 
-      </li>
-   </ol>
-
 </div>
 <script type="text/javascript">
 
-angular.module('app', [])
-.controller('recetaController', ['$scope', '$http', function ($scope, $http){
-    $scope.recetas = [];
-    $scope.cargarRecetasDisponibles = function(){
-      $http.get('/recetasDisponibles.json')
-        .success(function(response) {
-          $scope.recetas = response;
-  
-        })
-        .error(function(data) {
-          console.log();
-        });
-    };
+angular.module('app', ['ngRoute'])
+  .config(['$routeProvider',
+         function($routeProvider) {
+            $routeProvider.
+               when('url', {
+                  templateUrl: '...',
+                  controller: '...'
+               }).
+               when('url', {
+                  templateUrl: '...',
+                  controller: '...'
+               }).
+               otherwise({
+                  redirectTo: '/'
+               });
+         }])
+  .controller('recetaController', ['$scope', function ($scope){
+
 }]);
 
 </script>
