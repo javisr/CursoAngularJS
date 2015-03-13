@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Vistas AngularJS</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+
+<body>
+<h2>Vistas AngularJS</h2>
+<div ng-app="app" ng-controller="recetaController">
+
+<button type="button" ng-click="cargarRecetasDisponibles()">Cargar</button>
+
+   <p>Lista de recetas:</p>
+   <ol>
+      <li ng-repeat="receta in recetas">
+         {{ receta.nombre + '. precio: ' + receta.precio + ' euros'}} 
+      </li>
+   </ol>
+
+</div>
+<script type="text/javascript">
+
+angular.module('app', [])
+.controller('recetaController', ['$scope', '$http', function ($scope, $http){
+    $scope.recetas = [];
+    $scope.cargarRecetasDisponibles = function(){
+      $http.get('/recetasDisponibles.json')
+        .success(function(response) {
+          $scope.recetas = response;
+  
+        })
+        .error(function(data) {
+          console.log();
+        });
+    };
+}]);
+
+</script>
+</body>
+</html>
