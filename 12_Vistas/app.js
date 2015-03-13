@@ -2,6 +2,10 @@ angular.module('app', ['ngRoute'])
   .config(['$routeProvider',
     function($routeProvider) {
       $routeProvider.
+      when('/', {
+        templateUrl: 'principal.html',
+        controller: 'controlladorPrincipal'
+      }).
       when('/recetas', {
         templateUrl: 'recetas.html',
         controller: 'controlladorRecetas'
