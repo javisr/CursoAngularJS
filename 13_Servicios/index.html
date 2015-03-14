@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>Servicios AngularJS</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+<h2>Sevicios AngularJS</h2>
+<div ng-app="app" ng-controller="MatematicasController">
+      <p>Introduzca un número: <input type="numero" ng-model="numero" />
+      <button ng-click="cuadrado()">X<sup>2</sup></button>
+      <p>Resultado: {{resultado}}</p>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
