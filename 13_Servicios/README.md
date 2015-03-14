@@ -1,10 +1,12 @@
 ## Servicios ##
 
-Los servicios son funciones de JavaScript, que se encargan de realizar tareas específicas. Esto los convierte en entidades individuales que son fácilmente mantenible y testeables. Pueden ser utilizado en controladores, filtros y otros servicios. 
+Los servicios son funciones de JavaScript que se encargan de realizar tareas específicas. Esto los convierte en entidades individuales que son fácilmente mantenible y testeables. Pueden ser utilizado en controladores, filtros y otros servicios. 
 
 AngularJS ofrece muchos servicios incorporados como por ejemplo $http visto en el capítulo sobre AJAX.
 
 #### Factorías
+
+La función factory devuelve una función u objeto que después podremos utilizar desde otros componentes de AngularJS.
 
 ##### Creando la factoría
 
@@ -33,7 +35,6 @@ angular.module('app', [])
 ```
 
 
-
 ## Aplicación de Ejemplo ##
 
 
@@ -59,12 +60,6 @@ angular.module('app', [])
 </html>
 ```
 
-**principal.html** - **concineros.html** - **recetas.html**
-
-```HTML
-{{mensaje}}
-```
-
 **app.js**
 
 ```JAVASCRIPT
@@ -87,4 +82,4 @@ angular.module('app', [])
 
 ```
 Puedes ver la aplicación funcionando en el siguiente enlace:
-[]()
+[http://plnkr.co/edit/We5wOghfaBAI2BpSL23F?p=preview](http://plnkr.co/edit/We5wOghfaBAI2BpSL23F?p=preview)
