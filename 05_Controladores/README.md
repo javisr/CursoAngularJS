@@ -1,8 +1,6 @@
 ## Controladores 
 AngularJS se basa principalmente en los controladores para controlar el flujo de datos en la aplicación. Un controlador se asocia al HTML utilizando la directiva ng-controlador o bien mediante código JavaScript como veremos más adelante.
 
-Lo normal es que los controladores estén definidos en los módulos. Sin embargo para no ir muy deprisa por ahora lo estudiaremos con un pequeño ejemplo
-
 #### Asignación de un controlador al HTML
 
 Para asociar un elemento HTML a un controlador de angular tenemos que usar la directiva ng-controller.
@@ -30,10 +28,9 @@ angular.module('app', [])
 }]);
 </script>
 ```
+El controlador recetaController se define a través de la función controller del módulo app y recibe $scope como parámetro.
 
-La función recetaController se define como un objeto JavaScript que recibe $scope como parámetro.
-
-$scope es el objeto JavaScript de la vista. Angular crea uno para cada controlardor.
+$scope es el objeto JavaScript de la vista.
 
 Dentro de $scope hemos definido una propiedad receta
 
