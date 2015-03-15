@@ -25,9 +25,11 @@ Como ya hemos visto, *ng-model* enlaza el valor de un *input* con una variable.
 
 #### ng-init ####
 Utilizamos *ng-init* para inicializar variables en la aplicación. (Solo en casos de aplicaciones muy sencillas)
+```HTML
 <div ng-app="" ng-init="recetas=[]">
 ...
 </div>
+```
 
 #### ng-click ####
 La directiva *ng-click* se utiliza para realizar una acción al hacer click sobre el elemento.
