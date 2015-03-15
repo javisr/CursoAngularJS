@@ -52,4 +52,4 @@ Ejecuta una acción al hacer click sobre el elemento HTML.
 </html>
 ```
 Puedes ver la aplicación funcionando en el siguiente enlace:
-http://jsfiddle.net/Albertobeiz/jkoh2zxh/
+http://plnkr.co/edit/1m5EtMua5TYGy77vKu4E?p=preview
