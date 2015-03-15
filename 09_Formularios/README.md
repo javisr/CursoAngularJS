@@ -1,6 +1,6 @@
 ##Formularios##
 
-AngularJS proporciona un potente conjunto de utilidades para facilitar el trabajo con formularios. Utilizando estas utilidades y directivas ya conocidas, podemos validar formularios de una forma sencilla y potente.
+AngularJS proporciona un conjunto de utilidades para facilitar el trabajo con formularios. Utilizando estas utilidades y directivas ya conocidas, podemos validar formularios de una forma sencilla y potente.
 
 Lo primero es indicar que no vamos a utilizar las validaciones que proporciona HTML, y darle un nombre a nuestro formulario
 ```HTML
