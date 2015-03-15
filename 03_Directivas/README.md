@@ -17,28 +17,34 @@ Como vimos en el capitulo anterior, *ng-app* marca el inicio de una aplicación 
 </div>
 ```
 
-#### ng-init ####
-La directiva *ng-init* se utiliza para asignar valores iniciales a variables de la aplicación.
+#### ng-model ####
+Como ya hemos visto, *ng-model* enlaza el valor de un *input* con una variable.
 ```HTML
-<div ng-app="" ng-init="departamentos=['Aplicaciones', 'GIS', 'Distribuciones']">
+<input type="text" ng-model="titulo">
+```
+
+#### ng-init ####
+Utilizamos *ng-init* para inicializar variables en la aplicación. (Solo en casos de aplicaciones muy sencillas)
+```HTML
+<div ng-app="" ng-init="recetas=[]">
 ...
 </div>
 ```
 
-#### ng-model ####
-Como ya hemos visto, *ng-model* enlaza el valor de un *input* con una variable.
+#### ng-click ####
+La directiva *ng-click* se utiliza para realizar una acción al hacer click sobre el elemento.
 ```HTML
-<p>Escribe tu nombre: <input type="text" ng-model="nombre"></p>
+<button ng-click="alert('click')">Click</button>
 ```
 
 #### ng-repeat ####
 Esta directiva repite el elemento HTML al que está asociado tantas veces como elementos tenga la colección que se le indica.
 Podemos por ejemplo crear un elemento en una lista por cada uno de los departamentos definidos.
 ```HTML
-<p>Lista de departamentos:</p>
+<p>Lista de recetas:</p>
    <ol>
-      <li ng-repeat="departamento in departamentos">
-         {{ departamento }}
+      <li ng-repeat="receta in recetas">
+         {{ receta }}
       </li>
    </ol>
 ```
@@ -47,22 +53,31 @@ Podemos por ejemplo crear un elemento en una lista por cada uno de los departame
 ```HTML
 <html>
 <title>Directivas AngularJS</title>
+
 <body>
-<h1>Directivas AngularJS</h1>
-<div ng-app="" ng-init="departamentos=['Aplicaciones', 'GIS', 'Distribuciones']">
-   <p>Escribe tu nombre: <input type="text" ng-model="nombre"></p>
-   <p>¡Hola <span ng-bind="nombre"></span>! </p>
-   <p>Lista de departamentos:</p>
-   <ol>
-      <li ng-repeat="departamento in departamentos">
-         {{ departamento }}
+  <h1>Directivas AngularJS</h1>
+  <div ng-app="" ng-init="recetas=[]">
+    <p>Escribe el título de tu receta:
+      <input type="text" ng-model="titulo">
+    </p>
+
+    <p>Añadir <span ng-bind="titulo"></span> 
+    </p>
+
+    <button ng-click="recetas.push(titulo)">Añadir</button>
+
+    <p>Lista de recetas:</p>
+    <ol>
+      <li ng-repeat="receta in recetas">
+        {{ receta }}
       </li>
-   </ol>
-</div>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    </ol>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 </body>
+
 </html>
 ```
 
 Puedes ver la aplicación funcionando en el siguiente enlace:
-http://jsfiddle.net/Albertobeiz/05yan677/
+http://plnkr.co/edit/06udW0ogIb9WJBKFO6Ax?p=preview

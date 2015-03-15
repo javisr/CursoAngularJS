@@ -1,6 +1,6 @@
 ##Formularios##
 
-AngularJS proporciona un potente conjunto de utilidades para facilitar el trabajo con formularios. Utilizando estas utilidades y directivas ya conocidas, podemos validar formularios de una forma sencilla y potente.
+AngularJS proporciona un conjunto de utilidades para facilitar el trabajo con formularios. Utilizando estas utilidades y directivas ya conocidas, podemos validar formularios de una forma sencilla y potente.
 
 Lo primero es indicar que no vamos a utilizar las validaciones que proporciona HTML, y darle un nombre a nuestro formulario
 ```HTML
@@ -26,9 +26,9 @@ Las siguientes variables nos ayudan a saber el estado en el que se encuentra un 
 <input type="submit" ng-disabled ="form.$invalid" value="Guardar" />
 ```
 
-- ** $error ** - hash que proporciona el motivo exacto del error.
- ```HTML
- E-mail: <input type="email" ng-model="user.email" name="email" required />
+- **$error** - hash que proporciona el motivo exacto del error.
+```HTML
+E-mail: <input type="email" ng-model="user.email" name="email" required />
 <span ng-show="form.email.$error.email">Email no válido</span>
 <span ng-show="form.email.$error.required">Email obligatorio</span>
 ```
@@ -76,4 +76,4 @@ Las siguientes variables nos ayudan a saber el estado en el que se encuentra un 
 </html>
 ```
 
-https://jsfiddle.net/Albertobeiz/rm3r4aux/
+Puedes ver la aplicación funcionando en el siguiente enlace: http://plnkr.co/edit/QCGqvDfO8tzv1pJ4I3To?p=preview

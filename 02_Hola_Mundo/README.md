@@ -46,4 +46,4 @@ Para ver en funcionamiento nuestra apliación juntamos los cuatro pasos en un ar
 Podemos comprobar que el valor recogido en el *input* por la directiva **ng-model** es renderizado en la etiqueta *span* por la directiva **ng-bind**
 
 Puedes ver el programa funcionando en el siguiente enlace:
-http://jsfiddle.net/Albertobeiz/9ahjpphr/
+http://plnkr.co/edit/9pKnhc0KNWEulOiRcoq7?p=preview
