@@ -17,16 +17,20 @@ Como vimos en el capitulo anterior, *ng-app* marca el inicio de una aplicación 
 </div>
 ```
 
-#### ng-click ####
-La directiva *ng-click* se utiliza para realizar una acción al hacer click sobre el elemento.
-```HTML
-<div ng-app="" ng-init="departamentos=['Aplicaciones', 'GIS', 'Distribuciones']">
-...
-</div>
-```
-
 #### ng-model ####
 Como ya hemos visto, *ng-model* enlaza el valor de un *input* con una variable.
+```HTML
+<input type="text" ng-model="titulo">
+```
+
+#### ng-init ####
+Utilizamos *ng-init* para inicializar variables en la aplicación. (Solo en casos de aplicaciones muy sencillas)
+<div ng-app="" ng-init="recetas=[]">
+...
+</div>
+
+#### ng-click ####
+La directiva *ng-click* se utiliza para realizar una acción al hacer click sobre el elemento.
 ```HTML
 <button ng-click="alert('click')">Click</button>
 ```
@@ -35,10 +39,10 @@ Como ya hemos visto, *ng-model* enlaza el valor de un *input* con una variable.
 Esta directiva repite el elemento HTML al que está asociado tantas veces como elementos tenga la colección que se le indica.
 Podemos por ejemplo crear un elemento en una lista por cada uno de los departamentos definidos.
 ```HTML
-<p>Lista de departamentos:</p>
+<p>Lista de recetas:</p>
    <ol>
-      <li ng-repeat="departamento in departamentos">
-         {{ departamento }}
+      <li ng-repeat="receta in recetas">
+         {{ receta }}
       </li>
    </ol>
 ```
