@@ -42,4 +42,4 @@ AngularJS facilita la inclusión de HTML en otras páginas mediante la directiva
 </div>
 ```
 Puedes ver la aplicación funcionando en el siguiente enlace:
-http://jsfiddle.net/Albertobeiz/ab7nsm9v/
+http://plnkr.co/edit/H1ungSFB90UIuIxUaMH4?p=preview
