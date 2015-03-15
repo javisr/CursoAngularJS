@@ -26,9 +26,9 @@ Las siguientes variables nos ayudan a saber el estado en el que se encuentra un 
 <input type="submit" ng-disabled ="form.$invalid" value="Guardar" />
 ```
 
-- ** $error ** - hash que proporciona el motivo exacto del error.
- ```HTML
- E-mail: <input type="email" ng-model="user.email" name="email" required />
+- **$error** - hash que proporciona el motivo exacto del error.
+```HTML
+E-mail: <input type="email" ng-model="user.email" name="email" required />
 <span ng-show="form.email.$error.email">Email no válido</span>
 <span ng-show="form.email.$error.required">Email obligatorio</span>
 ```
