@@ -16,17 +16,18 @@ Para asociar un elemento HTML a un controlador de angular tenemos que usar la di
 #### Defición de un controlador
 ```HTML
 <script>
-function recetaController($scope) {
+angular.module('app', [])
+.controller('recetaController', ['$scope', function ($scope){
    $scope.receta = {
-      nombre: "ingredientesPrincipales",
-      ingredientesPrincipales: "Pasta, champiñones, bacon y aceite",
+      nombre: "Pasta con champinones",
+      ingredientesPrincipales: 'pasta,champinones...',
       resumen: function() {
          var recetaObj;
          recetaObj = $scope.receta;
-         return " La receta " + recetaObj.nombre + " se hace con:" + recetaObj.ingredientesPrincipales;
+         return " La receta " + recetaObj.nombre + " se hace con: " + recetaObj.ingredientesPrincipales;
       }
-   };
-}
+    };
+}]);
 </script>
 ```
 
