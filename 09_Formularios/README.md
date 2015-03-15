@@ -76,4 +76,4 @@ Las siguientes variables nos ayudan a saber el estado en el que se encuentra un 
 </html>
 ```
 
-https://jsfiddle.net/Albertobeiz/rm3r4aux/
+Puedes ver la aplicación funcionando en el siguiente enlace: http://plnkr.co/edit/QCGqvDfO8tzv1pJ4I3To?p=preview
