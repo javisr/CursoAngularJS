@@ -24,4 +24,9 @@ El temario parte de unos conocimientos previos. Es recomendable estar familiariz
  8. [Modulos](08_Modulos/)
  9. [Formularios](09_Formularios/)
  10. [Includes](10_Includes/)
+ 11. [AJAX](11_AJAX/)
+ 12. [Vistas](12_Vistas/)
+ 13. [Servicios](13_Servicios/)
+ 14. [Injeccion de dependencias]
+ 15. [Directivas Customs](15_Directivas_Custom/)
 
