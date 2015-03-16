@@ -78,6 +78,8 @@ Podemos por ejemplo crear un elemento en una lista por cada uno de los departame
 
 </html>
 ```
+Listado de directivas de AngularJS:
+https://docs.angularjs.org/api/ng/directive
 
 Puedes ver la aplicación funcionando en el siguiente enlace:
 http://plnkr.co/edit/06udW0ogIb9WJBKFO6Ax?p=preview
