@@ -37,9 +37,6 @@ miModulo.filter('saludo', function() {
 Puedes ver la aplicación funcionando en el siguiente link: http://plnkr.co/edit/15LYToUL93R01xI4ZjzP?p=preview
 
 El **segundo parámetro** indica la lista de dependencias de un módulo
-
-## Aplicación de ejemplo ##
-
 ```HTML
 var miModulo = angular.module('miModulo', ['moduloDependencia']);
 
