@@ -6,7 +6,7 @@ Lo ideal es tener un módulo por **cada componente** de nuestra aplicación.
 Algunas ventajas usar módulos al programar nuestra aplicación:
 - El código es más reutilizable.
 - Está más ordenado.
-- Y se entiende mejor.
+- Se entiende mejor.
 - Facilita el testeo de la aplicación.
 
 La directiva **ng-app** recibe un módulo que será el encargado de inicializar y configurar nuestra aplicación.
