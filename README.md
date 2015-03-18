@@ -7,7 +7,7 @@ Durante este curso veremos las principales características de AngularJS y final
 
 El curso está destinado a desarrolladores que se quieran iniciar en el mundo de Angular paso a paso, conociendo sus componente a través de pequeños ejemplos.
 
-## Prerequesitos
+## Prerrequesitos
 
 El temario parte de unos conocimientos previos. Es recomendable estar familiarizado con las siguientes tecnologías:
 * JavaScript
