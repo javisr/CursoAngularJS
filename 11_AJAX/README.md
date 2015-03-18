@@ -109,3 +109,6 @@ angular.module('app', [])
 
 Puedes ver la aplicación funcionando en el siguiente enlace:
 [http://plnkr.co/edit/JWQCucrXn9eUbPucgid4?p=preview](http://plnkr.co/edit/JWQCucrXn9eUbPucgid4?p=preview)
+
+Para hacer pruebas con una API REST fake podemos hacer uso de esta web:
+[http://jsonplaceholder.typicode.com/](http://jsonplaceholder.typicode.com/)
