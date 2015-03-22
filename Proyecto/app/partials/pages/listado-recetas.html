@@ -1,215 +1,35 @@
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<h3 class="panel-title">Panel title</h3>
-						</div>
-						<div class="panel-body">
-							<div></div>
-						</div>
-					</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Panel title</h3>
 				</div>
-				
-				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i>  Panel title (30€)</h3>
-						</div>
-						<div class="panel-body receta-panel-small">
-							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-								<h5>Descripción:</h5>
-								<div class="text-justify">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino.</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-								<h5>Ingredientes:</h5>
-								<ul class="list-inline">
-									<li>Caneasdfla</li>
-									<li>sdfla</li>
-									<li>Canesla</li>
-									<li>Cala</li>
-									<li>Canela</li>
-									<li>Canela</li>
-								</ul>
-							</div>
-						</div>
+				<div class="panel-body">
+					<div></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+			<div class="panel panel-default" ng-repeat="receta in recetas">
+				<div class="panel-heading">
+					<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i> {{receta.nombre}} ({{receta.precio}}€)</h3>
+				</div>
+				<div class="panel-body receta-panel-small">
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+						<h5>Descripción:</h5>
+						<div class="text-justify">{{receta.descripcion}}</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i>  Panel title (30€)</h3>
-						</div>
-						<div class="panel-body receta-panel-small">
-							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-								<h5>Descripción:</h5>
-								<div class="text-justify">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino.</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-								<h5>Ingredientes:</h5>
-								<ul class="list-inline">
-									<li>Caneasdfla</li>
-									<li>sdfla</li>
-									<li>Canesla</li>
-									<li>Cala</li>
-									<li>Canela</li>
-									<li>Canela</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i>  Panel title (30€)</h3>
-						</div>
-						<div class="panel-body receta-panel-small">
-							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-								<h5>Descripción:</h5>
-								<div class="text-justify">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino.</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-								<h5>Ingredientes:</h5>
-								<ul class="list-inline">
-									<li>Caneasdfla</li>
-									<li>sdfla</li>
-									<li>Canesla</li>
-									<li>Cala</li>
-									<li>Canela</li>
-									<li>Canela</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i>  Panel title (30€)</h3>
-						</div>
-						<div class="panel-body receta-panel-small">
-							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-								<h5>Descripción:</h5>
-								<div class="text-justify">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino.</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-								<h5>Ingredientes:</h5>
-								<ul class="list-inline">
-									<li>Caneasdfla</li>
-									<li>sdfla</li>
-									<li>Canesla</li>
-									<li>Cala</li>
-									<li>Canela</li>
-									<li>Canela</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i>  Panel title (30€)</h3>
-						</div>
-						<div class="panel-body receta-panel-small">
-							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-								<h5>Descripción:</h5>
-								<div class="text-justify">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino.</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-								<h5>Ingredientes:</h5>
-								<ul class="list-inline">
-									<li>Caneasdfla</li>
-									<li>sdfla</li>
-									<li>Canesla</li>
-									<li>Cala</li>
-									<li>Canela</li>
-									<li>Canela</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i>  Panel title (30€)</h3>
-						</div>
-						<div class="panel-body receta-panel-small">
-							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-								<h5>Descripción:</h5>
-								<div class="text-justify">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino.</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-								<h5>Ingredientes:</h5>
-								<ul class="list-inline">
-									<li>Caneasdfla</li>
-									<li>sdfla</li>
-									<li>Canesla</li>
-									<li>Cala</li>
-									<li>Canela</li>
-									<li>Canela</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i>  Panel title (30€)</h3>
-						</div>
-						<div class="panel-body receta-panel-small">
-							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-								<h5>Descripción:</h5>
-								<div class="text-justify">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino.</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-								<h5>Ingredientes:</h5>
-								<ul class="list-inline">
-									<li>Caneasdfla</li>
-									<li>sdfla</li>
-									<li>Canesla</li>
-									<li>Cala</li>
-									<li>Canela</li>
-									<li>Canela</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i>  Panel title (30€)</h3>
-						</div>
-						<div class="panel-body receta-panel-small">
-							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-								<h5>Descripción:</h5>
-								<div class="text-justify">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino.</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-								<h5>Ingredientes:</h5>
-								<ul class="list-inline">
-									<li>Caneasdfla</li>
-									<li>sdfla</li>
-									<li>Canesla</li>
-									<li>Cala</li>
-									<li>Canela</li>
-									<li>Canela</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i>  Panel title (30€)</h3>
-						</div>
-						<div class="panel-body receta-panel-small">
-							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-								<h5>Descripción:</h5>
-								<div class="text-justify">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino.</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-								<h5>Ingredientes:</h5>
-								<ul class="list-inline">
-									<li>Caneasdfla</li>
-									<li>sdfla</li>
-									<li>Canesla</li>
-									<li>Cala</li>
-									<li>Canela</li>
-									<li>Canela</li>
-								</ul>
-							</div>
-						</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<h5>Ingredientes:</h5>
+						<ul class="list-inline">
+							<li ng-repeat="ingrediente in receta.ingredientes">{{ingrediente.nombre}}</li>
+
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
