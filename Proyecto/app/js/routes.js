@@ -10,6 +10,10 @@
 				templateUrl: 'partials/pages/listado-recetas.html',
 				controller: 'recetasListadoCtrl'
 			}).
+			when('/recetas/nueva', {
+				templateUrl: 'partials/pages/nueva-receta.html',
+				controller: 'nuevaRecetaCtrl'
+			}).
 			when('/recetas/:id', {
 				templateUrl: 'partials/pages/receta.html',
 				controller: 'recetaCtrl'
