@@ -8,6 +8,7 @@
 			}).
 			when('/recetas', {
 				templateUrl: 'partials/pages/listado-recetas.html',
+				controller: 'recetasListadoCtrl'
 			}).
 			otherwise({
 				redirectTo: '/recetas'
