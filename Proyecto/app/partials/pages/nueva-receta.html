@@ -2,7 +2,8 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<div class="panel panel-default">
-				<div class="panel-heading"><input type="text" class="form-control" placeholder="Título de la receta"></div>
+				<div class="panel-heading"><input ng-model="receta.nombre" type="text" class="form-control" placeholder="Título de la receta">
+				</div>
 				<div class="panel-body">
 					<div class="bs-example" data-example-id="hoverable-table">
 						
@@ -16,14 +17,14 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td><input type="text" class="form-control" placeholder="ejem: Azucar"</td>
-									<td><input type="text" class="form-control" placeholder="ejem: 3 cucharadas"</td>
-									<td><a href=""><i class="glyphicon glyphicon-plus"></i></a></td>
+									<td><input type="text" ng-model="ingrediente.nombre" class="form-control" placeholder="ejem: Azucar"</td>
+									<td><input type="text" ng-model="ingrediente.cantidad" class="form-control" placeholder="ejem: 3 cucharadas"</td>
+									<td><a href="javascript:void(0);" ng-click="insertarIngrediente()"><i class="glyphicon glyphicon-plus"></i></a></td>
 								</tr>
-								<tr>
-									<td>Vino</td>
-									<td>Otto</td>
-									<td><a href=""><i class="glyphicon glyphicon-remove-circle"></i></a></td>
+								<tr ng-repeat="ingrediente in receta.ingredientes">
+									<td>{{ingrediente.nombre}}</td>
+									<td>{{ingrediente.cantidad}}</td>
+									<td><a href="javascript:void(0);" ng-click="borrarIngrediente()"><i class="glyphicon glyphicon-remove-circle"></i></a></td>
 								</tr>
 								
 							</tbody>
@@ -31,9 +32,11 @@
 					</div>
 					<hr>
 					<label for="descipcion">Descripción</label>
-					<textarea id="descripcion" name="descriptcion" class="form-control" rows="3"></textarea>
+					<textarea ng-model="receta.descripcion" name="descriptcion" class="form-control" rows="3"></textarea>
 					<hr>
-					<button class="btn btn-primary">Añadir</button>
+					<input ng-model="receta.precio" type="text" class="form-control" placeholder="Precio">
+					<hr>
+					<button class="btn btn-primary" ng-click="insertarReceta()">Añadir</button>
 					</div><!--/panel-body-->
 				</div>
 			</div>
