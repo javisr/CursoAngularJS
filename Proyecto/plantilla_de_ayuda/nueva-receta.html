@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<a class="navbar-brand" href="#">Recetario</a>
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="#">Recestas</a>
+				</li>
+				<li  class="active">
+					<a href="#">Añadir recetas</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="panel panel-default">
+						<div class="panel-heading"><input type="text" class="form-control" placeholder="Título de la receta"></div>
+						<div class="panel-body">
+							<div class="bs-example" data-example-id="hoverable-table">
+								
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th>Ingrediente</th>
+											<th>Cantidad</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" placeholder="ejem: Azucar"</td>
+											<td><input type="text" class="form-control" placeholder="ejem: 3 cucharadas"</td>
+											<td><a href=""><i class="glyphicon glyphicon-plus"></i></a></td>
+										</tr>
+										<tr>
+											<td>Vino</td>
+											<td>Otto</td>
+											<td><a href=""><i class="glyphicon glyphicon-remove-circle"></i></a></td>
+										</tr>
+										
+									</tbody>
+								</table>
+							</div>
+							<hr>
+							<label for="descipcion">Descripción</label>
+							<textarea id="descripcion" name="descriptcion" class="form-control" rows="3"></textarea>
+							<hr>
+							<button class="btn btn-primary">Añadir</button>
+							</div><!--/panel-body-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="http://code.jquery.com/jquery.js"></script>
+			<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		</body>
+	</html>
