@@ -10,6 +10,10 @@
 				templateUrl: 'partials/pages/listado-recetas.html',
 				controller: 'recetasListadoCtrl'
 			}).
+			when('/recetas/:id', {
+				templateUrl: 'partials/pages/receta.html',
+				controller: 'recetaCtrl'
+			}).
 			otherwise({
 				redirectTo: '/recetas'
 			});
