@@ -14,7 +14,7 @@
 		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
 			<div class="panel panel-default" ng-repeat="receta in recetas">
 				<div class="panel-heading">
-					<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i> {{receta.nombre}} ({{receta.precio}}€)</h3>
+					<h3 class="panel-title"><i class="glyphicon glyphicon-cutlery"></i> <a href="#/receta/{{receta.id}}" class="pull-right">Ver más</a> {{receta.nombre}} ({{receta.precio}}€)</h3>
 				</div>
 				<div class="panel-body receta-panel-small">
 					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
