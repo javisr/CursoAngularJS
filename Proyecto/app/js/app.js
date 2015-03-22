@@ -1,4 +1,4 @@
 (function() {
   'use strict';
-  angular.module('recetarioApp', []);
+  angular.module('recetarioApp', ['ngRoute']);
 })();
